@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="net.codejava.hibernate.Book" table="bookstore">
+        <id name="bookId" type="long" column="book_id">
+            <generator class="increment" />
+        </id>
+        <property name="title">
+            <column name="title" />
+        </property>
+        <property name="author">
+            <column name="author" />
+        </property>
+        <property name="price">
+            <column name="price" />
+        </property>
+
+    </class>
+</hibernate-mapping>
